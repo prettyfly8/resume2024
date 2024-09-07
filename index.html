@@ -1,24 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+  <title>Etay's Resume - Profile HTML Page</title>
 
-     <title>Etay's Resume - Profile HTML Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Tooplate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="Tooplate">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Google Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/all.min.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
 
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5; /* Light gray background for the entire page */
+        }
+        .hero {
+            background-color: #1a1f36; /* Dark blue background for the hero section */
+            color: #ffffff; /* White text for contrast */
+        }
+        .navbar {
+            background-color: #ffffff; /* White background for the navbar */
+            border-bottom: 1px solid #eaeaea; /* Light border for a clean look */
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #1a1f36; /* Dark blue color for text in the navbar */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ff6b6b; /* Accent color for hover effects */
+        }
+        .custom-btn {
+            background-color: #ff6b6b; /* Accent color for buttons */
+            color: #ffffff;
+        }
+        .custom-btn:hover {
+            background-color: #ff5252;
+        }
+        h2.hero-title {
+            color: #ffffff;
+            font-weight: 700;
+        }
+        a.email-link {
+            color: #ff6b6b;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .about-image {
+            border-radius: 5px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        }
+        .profile-list li {
+            color: #333333;
+        }
+        .testimonials-thumb {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-header h2 button {
+            color: #1a1f36;
+        }
+        .contact-form input, .contact-form textarea {
+            border: 1px solid #e0e0e0;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #ff6b6b;
+            box-shadow: none;
+        }
+        footer {
+            background-color: #1a1f36;
+            color: #ffffff;
+        }
+        .footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
@@ -62,262 +128,58 @@
         </div>
     </nav>
 
-
     <!-- HERO -->
     <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
 
-         <div class="container">
+        <div class="container">
             <div class="row">
+                <div class="mx-auto col-lg-5 col-md-5 col-10">
+                    <img src="images/19e49686-3bb8-4699-8faf-51d2e538dd44.jpg" class="img-fluid" alt="Etay Resume HTML Template">
+                </div>
 
-                  <div class="mx-auto col-lg-5 col-md-5 col-10">
-                      <img src="images/19e49686-3bb8-4699-8faf-51d2e538dd44.jpg" class="img-fluid" alt="Etay Resume HTML Template">
-                  </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
+                    <div class="hero-text">
+                        <h2 class="hero-title">👋 Etay, the Bug Buster: Your friendly neighborhood manual QA tester!</h2>
 
-                   <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
-                        <div class="hero-text">
-
-                            <h2 class="hero-title">👋 Etay, the Bug Buster: Your friendly neighborhood manual QA tester!</h2>
-
-                            <a href="mailto:harel.etay@gmail.com" class="email-link">
-                                                                Sent a mail
-                            </a>
-                          
-                        </div>
+                        <a href="mailto:harel.etay@gmail.com" class="email-link">
+                            Send a mail
+                        </a>
                     </div>
-
+                </div>
             </div>
         </div>
     </section>
 
-
+    <!-- ABOUT SECTION -->
     <section class="about section-padding" id="about">
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-6 col-md-6 col-12">
                     <h3 class="mb-4">This is Etay's Resume</h3>
-
                     <p>Hi there, I'm Etay Harel, a manual QA tester with a passion for quality assurance and a knack for finding bugs!</p>
-
-                    <p>I'm not your typical QA tester—I bring a unique blend of skills and experiences to the table. My path in the educational field has equipped me with invaluable tools for teamwork and social skills. With a Bachelor's degree in Informal Education and Teaching Certificate from Beit-Berl Academic College, I've honed my abilities in communication, organization, and problem-solving. My journey has taken me through diverse roles, from teaching and coordinating educational programs to managing teams and projects. Additionally, I successfully completed a manual QA course at the Automation College of Gal Matalon, enhancing my technical expertise and practical skills in quality assurance."</p>
+                    <p>My background in education and manual QA ensures I bring excellent communication and analytical skills to every project I work on.</p>
 
                     <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
                         <li><strong>Full Name :</strong> Etay Harel </li>
-
                         <li><strong>Date of Birth:</strong> 20 January 1989</li>
-
-                        <li><strong>Website :</strong> https://prettyfly8.github.io/resume2024/ </li>
-
+                        <li><strong>Website :</strong> <a href="https://prettyfly8.github.io/resume2024/">View My Website</a></li>
                         <li><strong>Email :</strong> harel.etay@gmail.com</li>
                     </ul>
                 </div>
 
                 <div class="col-lg-5 mx-auto col-md-6 col-12">
-                    <img src="images/true-agency.jpg" class="about-image img-fluid" alt="Ben's Resume HTML Template">
-                </div>
-
-            </div>
-            <div class="row about-third">
-            	<div class="col-lg-4 col-md-4 col-12">
-                <h3>Thinking Outside the Box</h3>
-                <p>As a manual QA tester, I approach testing with a creative mindset, always thinking outside the box to uncover potential issues that traditional tests might overlook. I go beyond standard test cases, exploring unconventional scenarios and edge cases to ensure comprehensive coverage. By thinking creatively, I can identify unexpected bugs and contribute to a more robust testing process.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                <h3>Problem-Solving</h3>
-                <p>Problem-solving is at the core of manual QA testing, and I excel in tackling complex challenges head-on. I have a knack for dissecting problems, analyzing root causes, and devising innovative solutions. Whether it's troubleshooting unexpected errors or designing efficient testing strategies, I leverage my problem-solving skills to overcome obstacles and deliver high-quality software.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                <h3>Communication Skills</h3>
-                <p>Effective communication is crucial for a manual QA tester to convey findings clearly and collaborate with developers and stakeholders. I excel in communicating complex technical information in a concise and understandable manner. Whether documenting test cases, reporting bugs, or discussing testing results, I ensure clear and transparent communication to facilitate collaboration and drive quality improvements.</p>
+                    <img src="images/true-agency.jpg" class="about-image img-fluid" alt="Etay's Profile Image">
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- TESTIMONIAL -->
-     <section class="testimonials section-padding" id="testimonials">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-12">
-                        <h3 class="mb-5 text-center">What People say</h3>
-
-                        <div class="owl-carousel owl-theme" id="testimonials-carousel">
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image01.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>"Etay is a highly organized and proactive individual with excellent interpersonal skills. He consistently demonstrates a strong commitment to achieving goals and has a natural ability to motivate and lead others."</p>
-
-                                        <h6 class="mb-0">Shay</h6>
-                                        <span>Educational mannager</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image02.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>"Etay is a detail-oriented professional with a keen analytical mind and a proven track record of delivering results. He excels in problem-solving and thrives in dynamic, fast-paced environments."</p>
-
-                                        <h6 class="mb-0">Nadav</h6>
-                                        <span>CEO & Founder</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                          
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-               </div>
-          </div>
-     </section>
-
-
-     <!-- FAQ -->
-     <section class="faq section-padding">
-        
-        <div class="container">
-            
-            <div class="row">
-
-                <div class="col-lg-12 col-12">
-
-                    <h3 class="mb-5">Frequently Asked Questions</h3>
-
-                    <div class="accordion" id="accordionExample">
-                      <div class="card">
-                        <div class="card-header" id="headingOne">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Why should I hire you for this position?
-                            </button>
-                          </h2>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>I bring a unique blend of skills and experiences that make me well-suited for a verity of roles. I am confident in my ability to contribute to the team's success.</p>
-
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingTwo">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                             How do you prioritize tasks and manage your time effectively?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>As my past jobs have taught me, I prioritize tasks based on their urgency and importance, utilizing techniques like the Eisenhower Matrix to stay organized. Additionally, I maintain regular communication with my team to ensure alignment and adjust priorities as needed. This approach has consistently enabled me to meet deadlines and deliver high-quality work.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <div class="card-header" id="headingThree">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              How do you handle constructive criticism?
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <p>I view constructive criticism as an opportunity for growth. I actively seek feedback from colleagues and supervisors to identify areas for improvement. I then use this feedback to reflect on my performance, adjust my approach as needed, and continue to develop my skills.</p>
-                          </div>
-                        </div>
-                      </div>
-
-                   
-                    </div>
-
-                    <span class="faq-info-text">Please send us a message if you have anything to say. Send an email message to <strong>contact (at) tooplate (dot) com</strong></span>
-
-                </div>
-
-           	 </div><!-- col -->
-        	</div><!-- row -->
-        </div><!-- container -->
-    </section>
-
-
-     <section class="contact section-padding pt-0" id="contact">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-6 col-md-6 col-12">
-            <form action="#" method="get" class="contact-form webform"  role="form">
-                
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
-
-                    <label for="cf-name" class="webform-label">Full Name</label>
-                </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
-
-                    <label for="cf-email" class="webform-label">Your Email</label>
-                </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
-
-                    <label for="cf-message" class="webform-label">Message</label>
-                </div>
-
-                <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
-            </form>
-          </div>
-
-            <div class="mx-auto col-lg-4 col-md-6 col-12">
-                <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
-
-                <p class="mb-1">+972 54-9732672</p>
-
-                <p>
-                    <a href="#">
-                        Harel.etay@gmail.com
-                    <i class="fas fa-arrow-right custom-icon"></i>
-                    </a>
-                </p>
-
-                <ul class="social-links mt-2">
-                    <li><a href="http://www.linkedin.com/in/etayharel/" rel="noopener" class="fab fa-linkedin"></a></li>
-                </ul>
-                
-              <p class="copyright-text mt-5 pt-3">Copyright &copy; 2024 Etay Resume Page</p>
-                
-                <p>Design: <a href="https://www.tooplate.com" title="free HTML templates" target="_blank">Tooplate</a></p>
-            </div>
-
-        </div>
-      </div>
-    </section>
-     <!-- SCRIPTS -->
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/custom.js"></script>
+    <!-- SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 </html>
